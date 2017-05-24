@@ -1,0 +1,47 @@
+<DOCTYPE! html>
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Favourite Things</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Favourite Things</h1>
+
+    <p>Tell us about your fav things</p>
+
+    <form id="favorite">
+      <div class="form-group">
+        <label for="animal">Animal</label>
+        <input id="animal" type="text">
+      </div>
+      <div class="form-group">
+        <label for="sport">Sport</label>
+        <input id="sport" type="text">
+      </div>
+      <div class="form-group">
+        <label for="decadeOfMusic">Decade of Music</label></br>
+          <input type="radio" value="70s" name="decadeOfMusic" checked>70s<br/>
+          <input type="radio" value="80s" name="decadeOfMusic">80s<br/>
+          <input type="radio" value="90s" name="decadeOfMusic">90s<br/>
+          <input type="radio" value="00s" name="decadeOfMusic">00s<br/>
+      </div>
+
+      <button type="submit" class="btn">My fav things</button>
+    </form>
+
+
+
+    <div id="favOutput">
+      <p>Your fav things are</p>
+      <ul>
+        <li>animal: <span id="animalOutput"></span></li>
+        <li>sport: <span id="sportOutput"></span></li>
+        <li>decade of music: <span id="decadeOfMusicOutput"></span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
